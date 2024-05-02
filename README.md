@@ -3,7 +3,7 @@ This repository contains the implementation of Pong clone developed with Python 
 It contains two type of branches: ***pong*** and ***pong-basic***.
 
 ## About pong branch
-This branch contains the implemention of Pong based on (pong-basic brach)[https://github.com/bottamichele/Pong-Python/tree/pong-basic] 
+This branch contains the implemention of Pong based on [pong-basic brach](https://github.com/bottamichele/Pong-Python/tree/pong-basic)
 that adds improvements on collision system with using pybox2d library and new AI bot with high skill bot.
 
 ## Library used
