@@ -9,6 +9,7 @@ from pong.controller.controller import PaddlePosition
 from pong.controller.player_controller import PlayerController
 from pong.controller.basic_bot_controller import BasicBotController
 from pong.controller.bot_controller import BotController
+from pong.controller.dueling_dqn_controller import DuelingDQNController
 
 
 class ControllerType(Enum):
@@ -16,6 +17,7 @@ class ControllerType(Enum):
     PLAYER = 0                      #Player controller
     BASIC_BOT = 1                   #Bot controller with basic strategy
     BOT = 2                         #Bot controller with advanced strategy
+    DUELING_DQN_BOT = 3             #Bot controller which uses Dueling DQN
 
 
 class Pong:
@@ -72,6 +74,8 @@ class Pong:
             return BasicBotController(paddle_to_control, paddle_position, current_game.ball)
         elif controller_type == ControllerType.BOT:
             return BotController(paddle_to_control, paddle_position, current_game)
+        elif controller_type == ControllerType.DUELING_DQN_BOT:
+            return DuelingDQNController(paddle_to_control, paddle_position, current_game)
 
     def _init(self):
         pygame.init()
