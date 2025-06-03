@@ -1,11 +1,11 @@
 # Pong-Python
-This repository contains the implementation of Pong clone developed with Python using PyGame library.
+This repository contains the implementation of Pong clone developed in Python language using the PyGame library.
 It contains two type of branches: ***pong*** and ***pong-basic***.
 
 ## About pong-basic branch
-This branch contains a reimplementation from my private project done with C++ of Pong and this is a version developed entirely from scratch: 
-game logic and a collision system implemented from scratch. However, collision doesn't work properly sometimes, 
-such as ball doesn't collide with a paddle well or ball goes away at begin of game.
+This branch contains the reimplementation of my private project made in C++ language on Pong and is implemented from scratch: 
+game logic and the collision system. However, the collision system doesn't properly work sometimes.
 
 ## Library used
 - [PyGame](https://www.pygame.org/)
+- [NumPy](https://numpy.org/)
